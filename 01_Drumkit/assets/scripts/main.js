@@ -1,6 +1,10 @@
 import keys from "../data/keys.json" assert { type: "json" };
 import audio from "../data/audio.json" assert { type: "json" };
 
+//handle preloader
+window.addEventListener("load", () => {
+  document.querySelector(".preloader").style.display = "none";
+});
 // populating keys
 const keysWrapper = document.getElementsByClassName("keys")[0];
 keys.forEach((element) => {
