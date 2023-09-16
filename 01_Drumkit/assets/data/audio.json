@@ -1,0 +1,38 @@
+[
+  {
+    "keyCode": 65,
+    "src": "./assets/sounds/boom.wav"
+  },
+  {
+    "keyCode": 83,
+    "src": "./assets/sounds/hihat.wav"
+  },
+  {
+    "keyCode": 68,
+    "src": "./assets/sounds/kick.wav"
+  },
+  {
+    "keyCode": 70,
+    "src": "./assets/sounds/openhat.wav"
+  },
+  {
+    "keyCode": 71,
+    "src": "./assets/sounds/boom.wav"
+  },
+  {
+    "keyCode": 72,
+    "src": "./assets/sounds/ride.wav"
+  },
+  {
+    "keyCode": 74,
+    "src": "./assets/sounds/snare.wav"
+  },
+  {
+    "keyCode": 75,
+    "src": "./assets/sounds/tom.wav"
+  },
+  {
+    "keyCode": 76,
+    "src": "./assets/sounds/tink.wav"
+  }
+]
