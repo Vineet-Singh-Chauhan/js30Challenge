@@ -1,0 +1,89 @@
+html {
+  background: #018ded url("../images/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1rem;
+}
+
+body {
+  margin: 0;
+  --clockDimension: 30rem;
+}
+main {
+  font-size: 2rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clock {
+  width: var(--clockDimension);
+  height: var(--clockDimension);
+  border: 20px solid white;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #efefef,
+    inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+}
+
+.hand {
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  border-radius: 99px;
+}
+.hour-hand {
+  width: 25%;
+  height: 6px;
+}
+.min-hand {
+  width: 45%;
+  height: 4px;
+}
+.second-hand {
+  width: 50%;
+  height: 2px;
+}
+.pivot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%);
+  background: rgb(105, 0, 0);
+}
+
+@media (max-width: 600px) {
+  body {
+    --clockDimension: 20rem;
+  }
+}
+@media (max-width: 450px) {
+  body {
+    --clockDimension: 15rem;
+  }
+}
+@media (max-width: 360px) {
+  body {
+    --clockDimension: 10rem;
+  }
+}
